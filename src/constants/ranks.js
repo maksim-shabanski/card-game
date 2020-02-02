@@ -1,38 +1,38 @@
 const ranks = [
   {
-    name: 'six',
+    text: '6',
     value: 6,
   },
   {
-    name: 'seven',
+    text: '7',
     value: 7,
   },
   {
-    name: 'eight',
+    text: '8',
     value: 8,
   },
   {
-    name: 'nine',
+    text: '9',
     value: 9,
   },
   {
-    name: 'ten',
+    text: '10',
     value: 10,
   },
   {
-    name: 'jack',
+    text: 'Jack',
     value: 11,
   },
   {
-    name: 'queen',
+    text: 'Queen',
     value: 12,
   },
   {
-    name: 'king',
+    text: 'King',
     value: 13,
   },
   {
-    name: 'ace',
+    text: 'Ace',
     value: 14,
   },
 ];

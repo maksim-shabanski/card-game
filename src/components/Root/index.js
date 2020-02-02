@@ -1,6 +1,26 @@
-import React from 'react';
-import Deck from 'components/Deck';
+import React, { useState } from 'react';
 
-const Root = () => <Deck />;
+import Button from 'components/Button';
+import Game from 'components/Game';
+
+const Root = () => {
+  const [isGameStarted, setGameStarted] = useState(false);
+
+  const handleStartGame = () => {
+    setGameStarted(!isGameStarted);
+  };
+
+  return (
+    <main>
+      {isGameStarted ? (
+        <Game />
+      ) : (
+        <Button size="large" onClick={handleStartGame}>
+          Start new game
+        </Button>
+      )}
+    </main>
+  );
+};
 
 export default Root;
