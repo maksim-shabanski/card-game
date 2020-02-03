@@ -1,0 +1,38 @@
+.card {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 10px;
+	width: 170px;
+	height: 240px;
+	border-radius: var(--border-radius-base);
+	background-color: var(--white-color);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .18);
+
+	&--hearts,
+	&--diamonds {
+		color: var(--red-color);
+	}
+
+	&::after,
+	&::before {
+		position: absolute;
+		width: 10px;
+		content: attr(data-value);
+	}
+
+	&::before {
+		top: 5px;
+		left: 5px;
+	}
+
+	&::after {
+		right: 5px;
+		bottom: 5px;
+	}
+
+	&__sign {
+		font-size: 60px;
+	}
+}
