@@ -1,0 +1,33 @@
+:root {
+	--font-family-base: -apple-system, "Segoe UI", roboto, oxygen, ubuntu, cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+	--font-size: 16px;
+	--bg-color: #f0f0f0;
+	--black-color: #363636;
+	--white-color: #fff;
+	--red-color: #e44145;
+	--primary-color: #00d1b2;
+	--primary-hover: #00c4a7;
+	--primary-active: #00b89c;
+	--border-radius-base: 4px;
+}
+
+html {
+	background-color: var(--bg-color);
+	color: var(--black-color);
+	font-size: var(--font-size);
+	font-family: var(--font-family-base);
+	text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	margin: 0;
+}
+
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}

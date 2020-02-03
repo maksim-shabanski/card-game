@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+import './game.scss';
 import {
   createPlayers,
   calculateWinner,
@@ -120,15 +121,18 @@ const Game = () => {
   };
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center' }}>
+    <div className="game">
       {isGameFinish ? (
-        <>
-          <div>{gameStatus}</div>
+        <div className="game__info">
+          <h1>{gameStatus}</h1>
           <Button onClick={restartGame}>Restart game</Button>
-        </>
+        </div>
       ) : (
         <>
-          <Player name={firstPlayer.name} />
+          <Player
+            name={firstPlayer.name}
+            remainedCards={firstPlayer.cards.length}
+          />
           {isFirstStep ? (
             <Button onClick={takeFirstStep}>Take first step</Button>
           ) : (
@@ -139,7 +143,10 @@ const Game = () => {
               takeNextStep={takeNextStep}
             />
           )}
-          <Player name={secondPlayer.name} />
+          <Player
+            name={secondPlayer.name}
+            remainedCards={secondPlayer.cards.length}
+          />
         </>
       )}
     </div>

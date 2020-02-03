@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
+import './button.scss';
+
 const Button = ({ children, size, onClick }) => {
   const prefix = 'btn';
   const classes = classNames(prefix, size && `${prefix}--${size}`);

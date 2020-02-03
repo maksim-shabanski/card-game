@@ -1,0 +1,30 @@
+.btn {
+	padding: 6px 12px;
+	outline: 0;
+	border: 1px solid transparent;
+	border-radius: var(--border-radius-base);
+	background-color: var(--primary-color);
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	font-weight: 400;
+	font-size: 14px;
+	cursor: pointer;
+
+	&:hover {
+		background-color: var(--primary-hover);
+	}
+
+	&:active {
+		background-color: var(--primary-active);
+	}
+
+	&:focus {
+		box-shadow: 0 0 0 2px rgba(0, 209, 178, .25);
+	}
+
+	&--large {
+		padding: 15px 35px;
+		font-size: 24px;
+	}
+}

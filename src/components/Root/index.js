@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+import './root.scss';
 import Button from 'components/Button';
 import Game from 'components/Game';
 

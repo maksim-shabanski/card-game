@@ -20,19 +20,19 @@ const ranks = [
     value: 10,
   },
   {
-    text: 'Jack',
+    text: 'J',
     value: 11,
   },
   {
-    text: 'Queen',
+    text: 'Q',
     value: 12,
   },
   {
-    text: 'King',
+    text: 'K',
     value: 13,
   },
   {
-    text: 'Ace',
+    text: 'A',
     value: 14,
   },
 ];
